@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="logoalura" src="/Imagem/logo alura.png" alt="logo da alura">
+        </header>
+
+        <main>
+            <section class="left-section">
+                <textarea id="text" class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+                <p id="warning" class="warning">Por Favor Digite um Texto</p>
+                <div class="information">
+                    <h6>Apenas letras minusculas e sem acento.</h6>
+                </div>
+                <div class="buttons">
+                    <button id="encryptButton" class="button-encrypt">Criptografar</button>
+                    <button id="decryptButton" class="button-decrypt">Descriptografar</button>
+                </div>
+            </section>
+            
+            <section class="right-section">
+                <div class="image-container">
+                    <textarea class="response" placeholder="Nenhuma mensagem encontrada." cols="20" rows="10"></textarea>
+                    <button id="copyButton" class="copy-button">Copiar</button>
+                </div>
+            </section>
+        </main>
+        
+
+        <footer>
+            <p class="personal-footer">CHALLENGE Alura. Desenvolvido por Isabel Targino.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html

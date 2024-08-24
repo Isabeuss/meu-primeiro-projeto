@@ -1,0 +1,174 @@
+:root{
+    --backgroundcolore: #FFB07F;
+    --letras: #E90074;
+    --fundobotao: #96C9F4;
+    --bordas: #000000;
+}
+
+
+* {
+    background: var(--backgroundcolore);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 50px;
+    height: calc(100vh - 100px);
+}
+
+.left-section, .right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.right-section {
+    flex: 2;
+    max-width: 800px;
+    text-align: center;
+}
+
+.logoalura {
+    margin-top: 20px;
+    width: 85px;
+    height: 40px;
+}
+
+.text-area {
+    width: 700px;
+    height: 120%;
+    resize: none;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 48px;
+    font-size: 32px;
+    font-family: "Inder", sans-serif;
+    background-color: var(--backgroundcolore);
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: var(--letras);
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.response {
+    width: 400px;
+    height: 635px;
+    background-color: var(--fundobotao);
+    background-image: url(/Imagem/emotecoracao.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 24px;
+    border-color: var(--bordas);
+    padding-left: 20px;
+    font-size: 32px;
+    font-weight: 400;
+    resize: none;
+    position: relative; 
+}
+
+.response:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+.button-encrypt, .button-decrypt {
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    background-color: var(--fundobotao);
+    color: var(--letras);
+    border-radius: 24px;
+    border: 1px solid var(--bordas);
+    cursor: pointer;
+}
+
+.button-encrypt {
+    margin-right: 20px; 
+}
+
+.copy-button {
+    width: 336px;
+    height: 67px;
+    font-size: 16px;
+    color: black;
+    background-color: var(--backgroundcolore);
+    border-radius: 24px;
+    border: 1px solid var(--bordas);
+    text-align: center;
+    cursor: pointer;
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    display: none;
+}
+
+.information {
+    color: var(--letras);
+    font-size: 12px;
+    font-weight: 228px;
+    opacity: 50%;
+    margin-left: 22px;
+}
+
+.personal-footer {
+    text-align: center;
+    padding: 1px;
+    background-color: var(--bordas);
+    color: var(--letras);
+    font-size: 12px;
+    margin-top: auto;
+}
+
+
+.warning{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 228px;
+    margin-left: 22px;
+    display: none;
+}
